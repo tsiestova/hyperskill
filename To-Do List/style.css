@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+.layout {
+    max-width: 700px;
+    padding: 50px 0;
+    margin: auto;
+    /*text-align: center;*/
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+#add-task-button,
+#input-task {
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #F9F7E8;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#add-task-button {
+    width: 130px;
+    cursor: pointer;
+}
+
+#input-task {
+    width: 400px;
+}
+
+#input-task:active {
+    border: none;
+}
+
+#add-task-button:hover {
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
+body {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    background-color: #87b9d7;
+}
+
+#task-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#add-task-button {
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.fa-plus-circle {
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(45deg);
+    font-size: 30px;
+    border: none;
+    color: #dd482f;
+}
+
+button .fas {
+    opacity: 80%;
+}
+
+button, button:active, button:focus { outline: none; }
+
+.delete-btn {
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+button .fas:hover {
+    opacity: 100%;
+}
+
+.task-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-check-task {
+    display: none;
+}
+
+.check-task_label {
+    margin-right: 30px;
+}
+
+.check-task_label .fa-check {
+    opacity: 60%;
+    font-size: 18px;
+    margin-right: 22px;
+}
+
+.check-task_label .fa-check:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#input-task {
+    font-family: 'Indie Flower', sans-serif;
+
+}
+
+.decor-text {
+    text-decoration: line-through;
+}
+
+input:checked {
+    text-decoration: line-through;
+}
