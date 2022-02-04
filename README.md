@@ -1,2 +1,2 @@
 -- To-Do List
-- https://htmlpreview.github.io/?https://github.com/tsiestova/projectsJS/blob/master/to-do-list/index.html
+- https://htmlpreview.github.io/?https://github.com/tsiestova/projectsJS/blob/master/todolist/index.html
