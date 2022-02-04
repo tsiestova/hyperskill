@@ -10,9 +10,13 @@ input {
 
 .layout {
     max-width: 700px;
-    padding: 50px 0;
-    margin: auto;
-    /*text-align: center;*/
+    padding: 60px;
+    margin: 50px auto;
+    background-color: #87b9d7;
+    height: 100%;
+    min-height: 90vh;
+    position: relative;
+    border-radius: 3px;
 }
 
 h1 {
@@ -52,7 +56,8 @@ body {
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
-    background-color: #87b9d7;
+    background: #F9F7E8;
+
 }
 
 #task-list {
@@ -95,6 +100,29 @@ button .fas:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+.task {
+    opacity: 75%;
+}
+
+.task-item:after {
+    content: '';
+    width: 80%;
+    position: absolute;
+    height: 1px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    background: white;
+    opacity: 60%;
+}
+
+.task:hover {
+    cursor: pointer;
+    opacity: 100%;
 }
 
 .input-check-task {
@@ -127,4 +155,15 @@ button .fas:hover {
 
 input:checked {
     text-decoration: line-through;
+}
+
+.layout:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-style: solid;
+    border-width: 0 60px 60px 0;
+    border-color: #F9F7E8 #F9F7E8 #65889d #F9F7E8;
+
 }
